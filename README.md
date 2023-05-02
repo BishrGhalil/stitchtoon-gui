@@ -1,29 +1,24 @@
-# StitchToon
-A powerful package for stitching and cutting webtoons/manhwa/manhua raws.
+# StitchToon Gui
+Graphical user interface for [stitchtoon](https://github.com/BishrGhalil/stitchtoon) written in Python and Qt6.
 
-All thanks to [MechTechnology](https://github.com/MechTechnology) for creating [SmartStitch](https://github.com/MechTechnology/SmartStitch) which is the base of this package.
+> This project is under development and shouldn't be used as production ready app.
 
-
-## New features
+## Features
 - export as archive
-- better output naming handling
+- better output handling
 - size limites for defferent output formats
+- multiple themes 
 
 ## Install
 
 Build from source
 ```
-git clone https://github.com/BishrGhalil/stitchtoon
-cd stitchtoon
+git clone https://github.com/BishrGhalil/stitchtoon-gui
+cd stitchtoon-gui
 pip instal --user requirements.txt
 pip install .
+stitchtoon-gui
 ```
 
-## Basic usage
-```
-stitchtoon -i <input-path> -sh <split-height>
-```
-Check out `help` for more advanced options
-```
-stitchtoon --help
-```
+#### TODO
+[ ] Settings handling

@@ -1,0 +1,17 @@
+QProgressBar {{
+    color: {QTMATERIAL_SECONDARYCOLOR};
+    border-radius: 3px;
+}}
+
+QLineEdit,QComboBox,QSpinBox {{
+    color: {QTMATERIAL_SECONDARYLIGHTCOLOR};
+}}
+
+QPushButton:hover {{
+    background-color: {QTMATERIAL_PRIMARYCOLOR};
+    color: {QTMATERIAL_SECONDARYCOLOR};
+}}
+
+QTextEdit {{
+    color: {QTMATERIAL_SECONDARYTEXTCOLOR};
+}}
