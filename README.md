@@ -1,7 +1,7 @@
 # StitchToon Gui
 Graphical user interface for [stitchtoon](https://github.com/BishrGhalil/stitchtoon) written in Python and Qt6.
 
-> This project is under development and shouldn't be used as production ready app.
+> This project is under development and shouldn't be used as a production ready app.
 
 ## Features
 - export as archive
