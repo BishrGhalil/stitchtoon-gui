@@ -9,6 +9,9 @@ Graphical user interface for [stitchtoon](https://github.com/BishrGhalil/stitcht
 - size limites for defferent output formats
 - multiple themes 
 
+### Screenshots
+![stitch tab](.github/screenshots/home.png)
+
 ## Install
 
 Build from source
@@ -21,4 +24,4 @@ stitchtoon-gui
 ```
 
 #### TODO
-[ ] Settings handling
+- [ ] Settings handling
