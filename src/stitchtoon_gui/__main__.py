@@ -10,11 +10,10 @@ from PySide6.QtWidgets import QApplication
 logging.basicConfig()
 
 
-def exit_handler(app):
-    settings.sync()
+def exit_handler():
     logging.log(logging.INFO, "Exiting app")
+    settings.sync()
     gc.collect()
-    app.quit()
 
 
 def main():
@@ -23,7 +22,6 @@ def main():
     app.setQuitOnLastWindowClosed(True)
     app.setQuitLockEnabled(False)
     widget = MainWindow()
-    widget.ui.exitButton.clicked.connect(lambda: exit_handler(app))
     app.aboutToQuit.connect(lambda: exit_handler)
     widget.show()
     return_code = app.exec()

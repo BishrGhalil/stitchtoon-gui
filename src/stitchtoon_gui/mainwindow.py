@@ -14,7 +14,6 @@ from PySide6.QtCore import QCoreApplication
 from PySide6.QtCore import QFile
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QFileDialog
-from PySide6.QtWidgets import QMainWindow
 from qt_material import QtStyleTools
 from qt_material import apply_stylesheet
 from stitchtoon.services.global_logger import logFunc
@@ -25,7 +24,7 @@ QTMATERIAL_SECONDARYTEXTCOLOR = os.environ.get("QTMATERIAL_SECONDARYTEXTCOLOR")
 CUSTOM_CSS = os.path.join(os.path.dirname(__file__), "custom.css")
 
 
-class MainWindow(QMainWindow, QtStyleTools):
+class MainWindow(QtStyleTools):
     def __init__(self, parent=None):
         super().__init__()
         self.theme = DEFAULT_THEME
@@ -44,7 +43,7 @@ class MainWindow(QMainWindow, QtStyleTools):
         path = Path(__file__).resolve().parent / "layout.ui"
         ui_file = QFile(path)
         ui_file.open(QFile.ReadOnly)
-        mainwindow_ui = loader.load(ui_file, self)
+        mainwindow_ui = loader.load(ui_file)
         ui_file.close()
         return mainwindow_ui
 
@@ -152,13 +151,10 @@ class MainWindow(QMainWindow, QtStyleTools):
         settings["profiles"] = settings["profiles"].update({name: profile})
         self.load_profile(profile)
 
-    def show(self):
-        self.ui.show()
-
     @logFunc(inclass=True)
     def show_advanced_options(self, state):
         self.ui.advancedOptionsFrame.setVisible(state)
-        size = self.maximumSize() if state else self.minimumSize()
+        size = self.ui.maximumSize() if state else self.ui.minimumSize()
         self.ui.resize(size)
 
     @logFunc(inclass=True)
@@ -302,3 +298,6 @@ class MainWindow(QMainWindow, QtStyleTools):
         return QFileDialog.getExistingDirectory(
             self, "Select Directory", startPath, QFileDialog.ShowDirsOnly
         )
+
+    def show(self):
+        self.ui.show()
