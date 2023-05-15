@@ -16,6 +16,7 @@ Stitchtoon is a fork of SmartStitch, However it offers much more features like:
 - Environment variables in post-process arguments.
 - Export as archive.
 - New mode for width enforcement.
+- New version notifier.
 - Post-process output will be shown.
 - Tools Tips all over the interface.
 - Transparency support.
