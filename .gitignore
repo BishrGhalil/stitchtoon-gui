@@ -11,6 +11,8 @@ build/
 
 dist/
 
+exe/
+
 profile.txt
 
 src/stitchtoon/__pycache__/

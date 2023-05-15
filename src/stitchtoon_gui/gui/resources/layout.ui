@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>Stitchtoon</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>stitching.png</normaloff>stitching.png</iconset>
+  </property>
   <property name="documentMode">
    <bool>false</bool>
   </property>
