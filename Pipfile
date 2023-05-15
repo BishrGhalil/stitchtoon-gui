@@ -4,14 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyside6 = "*"
-qt-material = "*"
+pyside6-essentials = "*"
+requests = "*"
 stitchtoon = "*"
+qt-material = "*"
 
 [dev-packages]
-black = "*"
-isort = "*"
-flake8 = "*"
+pyinstaller = "*"
 
 [requires]
-python_version = ">=3.8"
+python_version = "3.10"
