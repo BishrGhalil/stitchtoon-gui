@@ -26,8 +26,8 @@ class SPLIT_METHOD(Enum):
 
 
 DEFAULT_PROFILES = {
-    "To Edit": {
-        "name": "To Edit",
+    "WebToon To Edit": {
+        "name": "WebToon To Edit",
         "outputFormat": "PSD",
         "widthEnforcement": "Auto",
         "detectionType": "pixel",
@@ -42,8 +42,8 @@ DEFAULT_PROFILES = {
         "exportArchive": False,
         "enablePostProcess": False,
     },
-    "Ready": {
-        "name": "Ready",
+    "WebToon Ready": {
+        "name": "WebToon Ready",
         "outputFormat": "JPEG",
         "widthEnforcement": "Fixed",
         "detectionType": "pixel",
@@ -74,10 +74,11 @@ DEFAULT_PROFILES = {
         "exportArchive": False,
         "enablePostProcess": False,
     },
+    # FIXMEE: copywirte mode is not set
     "Manga Ready": {
         "name": "Manga Ready",
         "outputFormat": "JPEG",
-        "widthEnforcement": "copywrite",
+        "widthEnforcement": "Copywrite",
         "detectionType": "pixel",
         "lossyQuality": 86,
         "widthEnforcementFixedValue": -1,
