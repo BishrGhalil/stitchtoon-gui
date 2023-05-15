@@ -1,3 +1,6 @@
+# This file is part of stitchtoon.
+# License: MIT, see the file "LICENSE" for details.
+
 from PySide6.QtCore import QThread
 from PySide6.QtCore import Signal
 from stitchtoon.services import postprocess_run

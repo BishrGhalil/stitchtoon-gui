@@ -3,6 +3,14 @@ __logs__/
 
 .vscode/
 
+.env
+
+.venv
+
+build/
+
+dist/
+
 profile.txt
 
 src/stitchtoon/__pycache__/

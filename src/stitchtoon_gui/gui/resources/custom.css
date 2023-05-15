@@ -1,0 +1,53 @@
+QProgressBar {{
+    color: {QTMATERIAL_SECONDARYCOLOR};
+    border-radius: 3px;
+}}
+
+QLineEdit,QComboBox,QSpinBox {{
+    color: {QTMATERIAL_SECONDARYTEXTCOLOR};
+    background-color: {QTMATERIAL_SECONDARYCOLOR};
+}}
+
+QPushButton:hover {{
+    background-color: {QTMATERIAL_PRIMARYCOLOR};
+    color: {QTMATERIAL_SECONDARYCOLOR};
+}}
+
+QPushButton#addProfile:focus {{
+    background-color: none;
+    color: {{QTMATERIAL_PRIMARYCOLOR}};
+}}
+
+QPushButton#deleteProfile {{
+    background-color: none;
+    color: #dc3545;
+}}
+
+QPushButton#deleteProfile:focus {{
+    background-color: none;
+    color: #dc3545;
+}}
+
+QPushButton#deleteProfile:hover {{
+    background-color: #dc3545;
+    color: {QTMATERIAL_SECONDARYCOLOR};
+}}
+
+QPushButton#resetSettings {{
+    background-color: none;
+    color: #efcc40;
+}}
+
+QPushButton#resetSettings:focus {{
+    background-color: none;
+    color: #efcc40;
+}}
+
+QPushButton#resetSettings:hover {{
+    background-color: #efcc40;
+    color: {QTMATERIAL_SECONDARYCOLOR};
+}}
+
+QTextEdit {{
+    color: {QTMATERIAL_SECONDARYTEXTCOLOR};
+}}

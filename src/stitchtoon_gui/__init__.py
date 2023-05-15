@@ -1,9 +1,8 @@
 # This file is part of stitchtoon.
 # License: MIT, see the file "LICENSE" for details.
-"""Stitch Toon"""
+"""stitchtoon"""
 
 import os
-import sys
 from sys import version_info
 
 
@@ -32,9 +31,9 @@ def version_helper():
 
 # Information
 __license__ = "MIT"
-__version__ = "0.0.1"
+__version__ = "1.0.0"
 __release__ = False
-__author__ = __maintainer__ = "Beshr Ghalil"
+__author__ = __maintainer__ = "Beshr Alghalil"
 __email__ = "beshrghalil@porotonmail.com"
 
 # Constants
