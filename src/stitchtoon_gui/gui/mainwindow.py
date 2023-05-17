@@ -248,6 +248,9 @@ class MainWindow(QtStyleTools):
             lambda: self.ui.output.setText(self.browse_dialog(self.ui.output.text()))
         )
 
+        # disabled conflicted widgets
+        self.ui.matchSource.stateChanged.connect(self.enable_match_source)
+
         self.ui.start.clicked.connect(self.start)
 
     def load_profile(self, profile: Profile) -> None:
@@ -273,7 +276,10 @@ class MainWindow(QtStyleTools):
         self.ui.splitMethod.setCurrentText(profile["splitMethod"].capitalize())
         self.ui.widthEnforcement.setCurrentText(profile["widthEnforcement"])
         self.ui.widthEnforcementSpinBox.setValue(profile["widthEnforcementFixedValue"])
+        self.ui.matchSource.setChecked(profile["matchSource"])
+        self.ui.writeMetadata.setChecked(profile["writeMetadata"])
 
+        self.enable_match_source(profile["matchSource"])
         if profile["enablePostProcess"]:
             self.ui.postProcessArgs.setText(profile["postProcessArgs"])
             self.ui.postProcessScript.setText(profile["postProcessScript"])
@@ -300,6 +306,8 @@ class MainWindow(QtStyleTools):
         profile["splitMethod"] = self.ui.splitMethod.currentText().lower()
         profile["widthEnforcement"] = self.ui.widthEnforcement.currentText()
         profile["widthEnforcementFixedValue"] = self.ui.widthEnforcementSpinBox.value()
+        profile["matchSource"] = self.ui.matchSource.isChecked()
+        profile["writeMetadata"] = self.ui.writeMetadata.isChecked()
 
         return profile
 
@@ -425,6 +433,8 @@ class MainWindow(QtStyleTools):
             "as_archive": bool(profile["exportArchive"]),
             "lossy_quality": int(profile["lossyQuality"]),
             "progress": self.progress,
+            "slice_to_metadata": bool(profile["matchSource"]),
+            "write_metadata": bool(profile["writeMetadata"]),
             "params": stitch_params,
         }
 
@@ -518,6 +528,18 @@ class MainWindow(QtStyleTools):
             )
             or current_path
         )
+
+    def enable_match_source(self, enable):
+        conflicted_widgets = (
+            self.ui.widthEnforcement,
+            self.ui.widthEnforcementSpinBox,
+            self.ui.detectionType,
+            self.ui.sensitivity,
+            self.ui.lineSteps,
+            self.ui.ignorablePixels,
+        )
+        for widget in conflicted_widgets:
+            widget.setEnabled(not enable)
 
     def show(self):
         self.ui.show()
