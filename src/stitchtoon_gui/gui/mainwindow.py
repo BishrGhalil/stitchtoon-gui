@@ -30,7 +30,7 @@ from PySide6.QtWidgets import QMessageBox
 from qt_material import QtStyleTools
 from qt_material import apply_stylesheet
 from stitchtoon.utils.constants import DETECTION_TYPE
-from stitchtoon.utils.constants import SMALLER_ALLOWD_HEIGHT
+from stitchtoon.utils.constants import SMALLER_ALLOWED_HEIGHT
 from stitchtoon.utils.constants import SUPPORTED_IMG_TYPES
 from stitchtoon.utils.constants import WIDTH_ENFORCEMENT
 
@@ -373,10 +373,10 @@ class MainWindow(QtStyleTools):
         elif (
             self.ui.splitMethod.currentText().upper().replace(" ", "_")
             == "SPLIT_HEIGHT"
-            and self.ui.splitValue.value() < SMALLER_ALLOWD_HEIGHT
+            and self.ui.splitValue.value() < SMALLER_ALLOWED_HEIGHT
         ):
             self.status(
-                f"Smaller allowd height with `Split height` method is {SMALLER_ALLOWD_HEIGHT}",
+                f"Smaller ALLOWED height with `Split height` method is {SMALLER_ALLOWED_HEIGHT}",
                 "error",
             )
 
@@ -386,7 +386,7 @@ class MainWindow(QtStyleTools):
             and self.ui.splitValue.value() > 500
         ):
             self.status(
-                "Maximum allowd number with `Images Number` method is 500",
+                "Maximum ALLOWED number with `Images Number` method is 500",
                 "error",
             )
 

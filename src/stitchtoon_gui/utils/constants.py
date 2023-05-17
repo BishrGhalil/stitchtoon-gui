@@ -41,6 +41,8 @@ DEFAULT_PROFILES = {
         "batchMode": False,
         "exportArchive": False,
         "enablePostProcess": False,
+        "matchSource": False,
+        "writeMetadata": True,
     },
     "WebToon Ready": {
         "name": "WebToon Ready",
@@ -57,6 +59,8 @@ DEFAULT_PROFILES = {
         "batchMode": False,
         "exportArchive": True,
         "enablePostProcess": False,
+        "matchSource": True,
+        "writeMetadata": False,
     },
     "Manga To Edit": {
         "name": "Manga To Edit",
@@ -73,8 +77,9 @@ DEFAULT_PROFILES = {
         "batchMode": False,
         "exportArchive": False,
         "enablePostProcess": False,
+        "matchSource": False,
+        "writeMetadata": True,
     },
-    # FIXMEE: copywirte mode is not set
     "Manga Ready": {
         "name": "Manga Ready",
         "outputFormat": "JPEG",
@@ -90,5 +95,7 @@ DEFAULT_PROFILES = {
         "batchMode": False,
         "exportArchive": True,
         "enablePostProcess": False,
+        "matchSource": True,
+        "writeMetadata": False,
     },
 }

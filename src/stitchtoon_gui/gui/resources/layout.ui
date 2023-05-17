@@ -432,7 +432,7 @@
             <number>0</number>
            </property>
            <item>
-            <widget class="QWidget" name="widthEnforcmentWidget" native="true">
+            <widget class="QWidget" name="widthEnforcementWidget_2" native="true">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -519,6 +519,16 @@
            <property name="bottomMargin">
             <number>0</number>
            </property>
+           <item>
+            <widget class="QCheckBox" name="matchSource">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Match Source&lt;/span&gt;&lt;/p&gt;&lt;p&gt;If enabled and there is a metadata file in the input directory, images will be sliced according to the metadata file. Otherwise images will be sliced according to 'Split Height' and 'Images Number&amp;quot; options.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>Match Source</string>
+             </property>
+            </widget>
+           </item>
            <item>
             <widget class="QCheckBox" name="batchMode">
              <property name="toolTip">
@@ -815,6 +825,16 @@
             </widget>
            </item>
           </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="writeMetadata">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Write Metadata File&lt;/p&gt;&lt;p&gt;A metadate file will be saved in the output directory.&lt;/p&gt;&lt;p&gt;This metadate file is useful when slicing the output directory again and the 'match source' option is enabled.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Write Metadata File</string>
+          </property>
          </widget>
         </item>
         <item>
