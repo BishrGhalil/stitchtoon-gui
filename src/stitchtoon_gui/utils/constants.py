@@ -59,7 +59,7 @@ DEFAULT_PROFILES = {
         "batchMode": False,
         "exportArchive": True,
         "enablePostProcess": False,
-        "matchSource": True,
+        "matchSource": False,
         "writeMetadata": False,
     },
     "Manga To Edit": {
