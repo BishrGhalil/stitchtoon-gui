@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/BishrGhalil/stitchtoon-gui">
-    <img alt="stitchtoon.Logo" width="200" height="200" src="https://github.com/BishrGhalil/stitchtoon-gui/raw/dev/assets/stitchtoon_logo.png">
+    <img alt="stitchtoon.Logo" width="200" height="200" src="./assets/stitchtoon_logo.png">
   </a>
   <h1>StitchToon GUI</h1>
   <p>
