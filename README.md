@@ -1,6 +1,27 @@
-# Stitchtoon Gui
-
-Graphical user interface for [stitchtoon](https://github.com/BishrGhalil/stitchtoon) written in Python and Qt6.
+<div align="center">
+  <a href="https://github.com/BishrGhalil/stitchtoon-gui">
+    <img alt="stitchtoon.Logo" width="200" height="200" src="https://github.com/BishrGhalil/stitchtoon-gui/raw/dev/assets/stitchtoon_logo.png">
+  </a>
+  <h1>StitchToon GUI</h1>
+  <p>
+    The ultimate tool for working with webtoons/manhwa/manhua raws.
+  </p>
+    <p>
+    A Graphical User Interface for <a href="https://github.com/BishrGhalil/stitchtoon"><b>stitchtoon</b></a> written in Python and Qt6.
+    </p>
+  <a href="https://github.com/BishrGhalil/stitchtoon-gui/releases/latest">
+    <img src="https://img.shields.io/github/v/release/BishrGhalil/stitchtoon-gui">
+  </a>
+  <a href="https://github.com/BishrGhalil/stitchtoon-gui/releases/latest">
+    <img src="https://img.shields.io/github/release-date/BishrGhalil/stitchtoon-gui">
+  </a>
+  <a href="https://github.com/BishrGhalil/stitchtoon-gui/tree/dev">
+    <img src="https://img.shields.io/github/last-commit/BishrGhalil/stitchtoon-gui">
+  </a>
+  <a href="https://github.com/BishrGhalil/stitchtoon-gui/blob/dev/LICENSE">
+    <img src="https://img.shields.io/github/license/BishrGhalil/stitchtoon-gui">
+  </a>
+</div>
 
 ## Features over SmartStitch
 Stitchtoon is a fork of SmartStitch, However it offers much more features like:
