@@ -223,20 +223,7 @@ class MainWindow(QtStyleTools):
         # updates output field on input field changes
         self.ui.input.textChanged.connect(
             lambda input: self.ui.output.setText(
-                re.sub(
-                    "|".join(
-                        [
-                            i.replace(" ", ".")
-                            for i in self.profilesModel.getProfiles().keys()
-                        ]
-                    ),
-                    "",
-                    input,
-                ).rstrip("_")
-                + "_"
-                + self.ui.profile.currentText().replace(" ", "_")
-                if input
-                else ""
+                self.generate_output_from_input(input)
             )
         )
 
@@ -582,6 +569,21 @@ class MainWindow(QtStyleTools):
         retval = msg.exec_()
         if retval == QMessageBox.Yes:
             QDesktopServices.openUrl(url)
+
+    def generate_output_from_input(self, input: str):
+        if not input:
+            return ""
+        repat = "|".join(
+            [
+                i.replace(" ", ".")
+                for i in self.profilesModel.getProfiles().keys()
+            ]
+
+        )
+        output = str(Path(input).parent / re.sub(repat,"",str(Path(input).name)))
+        output += "_" if output[-1] != "_" else ""
+        output += self.ui.profile.currentText().replace(" ", "_")
+        return output
 
     def show_about(self):
         msg = QMessageBox(self.ui)
