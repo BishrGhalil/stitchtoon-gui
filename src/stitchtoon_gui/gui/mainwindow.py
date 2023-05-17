@@ -3,6 +3,7 @@
 
 
 import os
+import re
 import shlex
 from pathlib import Path
 
@@ -222,10 +223,26 @@ class MainWindow(QtStyleTools):
         # updates output field on input field changes
         self.ui.input.textChanged.connect(
             lambda input: self.ui.output.setText(
-                input + "_" + self.ui.profile.currentText().replace(" ", "_")
+                re.sub(
+                    "|".join(
+                        [
+                            i.replace(" ", ".")
+                            for i in self.profilesModel.getProfiles().keys()
+                        ]
+                    ),
+                    "",
+                    input,
+                ).rstrip("_")
+                + "_"
+                + self.ui.profile.currentText().replace(" ", "_")
                 if input
                 else ""
             )
+        )
+
+        # so output field will be updated on profile changes
+        self.ui.profile.currentTextChanged.connect(
+            lambda x: self.ui.input.textChanged.emit(self.ui.input.text())
         )
 
         # updates lossy quality label on slider changes
