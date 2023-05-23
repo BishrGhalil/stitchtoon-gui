@@ -332,7 +332,7 @@ class MainWindow(QtStyleTools):
 
     def show_width_enforcement(self, method):
         state = True
-        if method.lower() in ("none", "auto", "copywrite"):
+        if method.lower() in ("none", "auto", "cpyright"):
             state = False
             self.ui.widthEnforcementSpinBox.setValue(0)
         self.ui.widthEnforcementSpinBox.setVisible(state)

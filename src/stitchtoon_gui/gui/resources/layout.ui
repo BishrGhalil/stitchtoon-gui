@@ -29,6 +29,9 @@
    <iconset>
     <normaloff>stitching.png</normaloff>stitching.png</iconset>
   </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;Width Enforcement&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- none: &lt;/span&gt;output images will have the same width of input images (no changes).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- auto:&lt;/span&gt; unifies width, where you force all files to have the same width as the smallest file in the input folder.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- copyright:&lt;/span&gt; only first two images will have the same width (ex. copyright image and first image).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- fixed: &lt;/span&gt;output images will have a fixed width value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
   <property name="documentMode">
    <bool>false</bool>
   </property>
@@ -470,7 +473,7 @@
                 <item>
                  <widget class="QComboBox" name="widthEnforcement">
                   <property name="toolTip">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Width Enforcement&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;- none: &lt;/span&gt;output images will have the same width of input images (no changes).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;- auto:&lt;/span&gt; unifies width, where you force all files to have the same width as the smallest file in the input folder.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;- copywrite:&lt;/span&gt; only first two images will have the same width (ex. copywirte image and first image).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;- fixed: &lt;/span&gt;output images will have a fixed width value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;Width Enforcement&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- none: &lt;/span&gt;output images will have the same width of input images (no changes).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- auto:&lt;/span&gt; unifies width, where you force all files to have the same width as the smallest file in the input folder.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- copyright:&lt;/span&gt; only first two images will have the same width (ex. copyright image and first image).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:704;&quot;&gt;- fixed: &lt;/span&gt;output images will have a fixed width value.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
