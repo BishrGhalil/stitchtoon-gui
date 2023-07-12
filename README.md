@@ -18,6 +18,8 @@
   <a href="https://github.com/BishrGhalil/stitchtoon-gui/tree/dev">
     <img src="https://img.shields.io/github/last-commit/BishrGhalil/stitchtoon-gui">
   </a>
+  <a href="https://github.com/BishrGhalil/stitchtoon-gui/releases/">
+    <img src="https://img.shields.io/github/downloads/BishrGhalil/stitchtoon-gui/total">
   <a href="https://github.com/BishrGhalil/stitchtoon-gui/blob/dev/LICENSE">
     <img src="https://img.shields.io/github/license/BishrGhalil/stitchtoon-gui">
   </a>
