@@ -8,6 +8,8 @@
   </p>
     <p>
     A Graphical User Interface for <a href="https://github.com/BishrGhalil/stitchtoon"><b>stitchtoon</b></a> written in Python and Qt6.
+
+  <a href="https://discord.gg/vgWyc3tNnK">Discord Server</a>.
     </p>
   <a href="https://github.com/BishrGhalil/stitchtoon-gui/releases/latest">
     <img src="https://img.shields.io/github/v/release/BishrGhalil/stitchtoon-gui">
